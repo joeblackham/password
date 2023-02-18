@@ -1,0 +1,27 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://use.typekit.net/zeq1axs.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Generate a<br><a class="highlight">random password</a></h1>
+            <p>Never use an insecure password again.</p>
+            <div id="column-wrp">
+            <button onclick="generatePassword()">Generate Password</button>
+            
+            <div class="rangeslider">
+            <input type="range" min="5" max="20" value="10"
+                            class="myslider" id="sliderRange">
+            <p id="demo">characters</p>
+            </div>
+            </div>
+            <div id="line"></div>
+            <div id="column-wrp">
+                <button class="password" id="password-one" onclick="copy()"></button>
+                <button class="password" id="password-two" onclick="copy()"></button>
+            </div>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
